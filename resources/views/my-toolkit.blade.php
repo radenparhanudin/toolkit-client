@@ -33,6 +33,12 @@
                     <p class="lead text-center">Anda bebas menggunakan <strong>ToolKit</strong> dibawah ini untuk membantu pekerjaan anda.</p>
                     <div class="row d-flex justify-content-center">
                         {{-- Free ToolKit --}}
+                        <div class="col-xs-12 col-sm-4 col-lg-3">
+                            <a href="{{ route('rename-file.index') }}" class="btn btn-app-new">
+                                <i class="fas fa-file-code"></i>
+                                <strong>Rename File</strong>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-8 mt-5">
@@ -50,9 +56,9 @@
         <footer class="main-footer">
             <!-- To the right -->
             <div class="float-right d-none d-sm-inline">
-                Version {{ config('app.version') }}
+                Version {{ toolkit_info('version') }}
             </div>
-            Copyright &copy; {{ (date("Y") == 2022) ? date("Y") : "2022 - " . date("Y") }} <a href="{{ config('app.whatsapp') }}">{{ config('app.developer') }}</a>. All rights reserved.
+            Copyright &copy; {{ (date("Y") == 2022) ? date("Y") : "2022 - " . date("Y") }} <a href="{{ toolkit_info('whatsapp') }}">{{ toolkit_info('developer') }}</a>. All rights reserved.
         </footer>
     </div>
     <script src="{{ asset('app') }}/plugins/jquery/jquery.min.js"></script>

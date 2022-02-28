@@ -227,10 +227,5 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
-    ],
-
-    // Additional
-    'version'   => "1.0",
-    'developer' => "Raden Parhanudin",
-    'whatsapp'  => "https://wa.me/6282342788059",
+    ]
 ];

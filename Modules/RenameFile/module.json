@@ -1,0 +1,13 @@
+{
+    "name": "RenameFile",
+    "alias": "renamefile",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\RenameFile\\Providers\\RenameFileServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

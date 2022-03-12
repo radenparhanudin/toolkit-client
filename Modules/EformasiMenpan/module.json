@@ -1,0 +1,13 @@
+{
+    "name": "EformasiMenpan",
+    "alias": "eformasimenpan",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\EformasiMenpan\\Providers\\EformasiMenpanServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

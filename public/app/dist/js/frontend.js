@@ -12,11 +12,11 @@ $(document).ready(function(){
         minimumResultsForSearch: Infinity
     })
 
-    $('#formPost').submit(function (event) {
+    $('#formPostModalDatatable').submit(function (event) {
         event.preventDefault();
-        action = $('#formPost').attr('action');
-        method = $('#formPost').attr('method');
-        data   = $('#formPost').serialize();
+        action = $('#formPostModalDatatable').attr('action');
+        method = $('#formPostModalDatatable').attr('method');
+        data   = $('#formPostModalDatatable').serialize();
     
         $('.form-control').removeClass('is-invalid')
         $('.invalid-feedback').html('')
@@ -25,16 +25,12 @@ $(document).ready(function(){
             type: method,
             data: data,
             beforeSend: function () {
-                HoldOn.open({
-                    message: "Simpan data form!"
-                })
+                HoldOn.open()
             },
             success: function (res) {
                 HoldOn.close()
                 if(res.status){
-                    $('#formPost').trigger('reset')
-                    $('#formPost').find('select').val(null).trigger('change')
-                    $('#formPost').attr({
+                    $('#formPostModalDatatable').attr({
                         'action': res.data.action,
                         'method' : 'POST'
                     });
@@ -42,57 +38,7 @@ $(document).ready(function(){
                         icon: 'success',
                         html: res.message
                     })
-                    $('#dataTableDefault').DataTable().ajax.reload(null, false);
-                }
-                else{
-                    Swal.fire({
-                        icon: 'error',
-                        html: res.message
-                    })
-                }
-            },
-            error: function (xhr) {
-                HoldOn.close()
-                var res = xhr.responseJSON;
-                if ($.isEmptyObject(res) == false) {
-                    $.each(res.errors, function (key, value) {
-                        $('#' + key).addClass('is-invalid')
-                        $('#feedback_' + key).html(value[0])
-                    });
-                }
-            }
-        })
-    });
-
-    $('#formPostModal').submit(function (event) {
-        event.preventDefault();
-        action = $('#formPostModal').attr('action');
-        method = $('#formPostModal').attr('method');
-        data   = $('#formPostModal').serialize();
-    
-        $('.form-control').removeClass('is-invalid')
-        $('.invalid-feedback').html('')
-        $.ajax({
-            url: action,
-            type: method,
-            data: data,
-            beforeSend: function () {
-                HoldOn.open({
-                    message: "Simpan data form!"
-                })
-            },
-            success: function (res) {
-                HoldOn.close()
-                if(res.status){
-                    $('#formPostModal').attr({
-                        'action': res.data.action,
-                        'method' : 'POST'
-                    });
-                    Swal.fire({
-                        icon: 'success',
-                        html: res.message
-                    })
-                    $('#modalFormPost').modal('hide')
+                    $('#modalFormPostDatatable').modal('hide')
                     $('#dataTableDefault').DataTable().ajax.reload(null, false);
 
                 }
@@ -116,12 +62,12 @@ $(document).ready(function(){
         })
     });
 
-    $('#formImport').submit(function (event) {
+    $('#formImportModalDatatable').submit(function (event) {
         event.preventDefault();
-        var formImport = $('#formImport');
-            action     = formImport.attr('action');
-            method     = formImport.attr('method');
-            data       = new FormData(formImport[0]);
+        var formImportModalDatatable = $('#formImportModalDatatable');
+            action     = formImportModalDatatable.attr('action');
+            method     = formImportModalDatatable.attr('method');
+            data       = new FormData(formImportModalDatatable[0]);
     
         $('.form-control').removeClass('is-invalid')
         $('.invalid-feedback').html('')
@@ -144,6 +90,7 @@ $(document).ready(function(){
                         icon: 'success',
                         html: res.message
                     })
+                    $('#modalFormImportDatatable').modal('hide')
                     $('#dataTableDefault').DataTable().ajax.reload(null, false);
                 }
                 else{
@@ -166,13 +113,57 @@ $(document).ready(function(){
         })
     });
 
+    $('#formCariModalDatatable').submit(function (event) {
+        event.preventDefault();
+        action = $('#formCariModalDatatable').attr('action');
+        method = $('#formCariModalDatatable').attr('method');
+        data   = $('#formCariModalDatatable').serialize();
+
+        $('.form-control').removeClass('is-invalid')
+        $('.invalid-feedback').html('')
+        $.ajax({
+            url: action,
+            type: method,
+            data: data,
+            beforeSend: function () {
+                HoldOn.open()
+            },
+            success: function (res) {
+                HoldOn.close()
+                if(res.status){
+                    $('#formCariModalDatatable').trigger('reset')
+                    $('#dataTableDefault').DataTable().ajax.reload(null, false);
+                }
+                else{
+                    Swal.fire({
+                        icon: 'error',
+                        html: res.message
+                    })
+                }
+            },
+            error: function (xhr) {
+                HoldOn.close()
+                var res = xhr.responseJSON;
+                if ($.isEmptyObject(res) == false) {
+                    $.each(res.errors, function (key, value) {
+                        $('#' + key).addClass('is-invalid')
+                        $('#feedback_' + key).html(value[0])
+                    });
+                }
+            }
+        })
+    });
+
+
     /** Modal */
-    $('#modalFormPost').on('hidden.bs.modal', function(e){
-        $('#formPostModal').trigger('reset')
-        $('#formPostModal').find('select').val(null).trigger('change')
-        $('#formPostModal').find('.form-control').removeClass('is-invalid')
-        $('#formPostModal').find('.invalid-feedback').html('')
+    $('#modalFormPostDatatable').on('hidden.bs.modal', function(e){
+        $('#formPostModalDatatable').trigger('reset')
+        $('#formPostModalDatatable').find('select').val(null).trigger('change')
+        $('#formPostModalDatatable').find('.form-control').removeClass('is-invalid')
+        $('#formPostModalDatatable').find('.invalid-feedback').html('')
     })
+
+
     /** DataTables */
     $.extend($.fn.dataTable.defaults, {
         responsive: true,
@@ -198,11 +189,11 @@ $(document).ready(function(){
         e.preventDefault();
     });
 
-    $('.btn-clear-datatable').on('click', function(e){
+    $('.btn-reset-datatable').on('click', function(e){
         e.preventDefault();
         $('#formFilterDatatable').trigger('reset')
         $('#formFilterDatatable').find('select').val(null).trigger('change')
-        $('#modalFilterDatatables').modal('hide')
+        $('#modalFilterDatatable').modal('hide')
         $('#dataTableDefault').dataTable().fnFilter('');
         $('#dataTableDefault').DataTable().draw();
     })

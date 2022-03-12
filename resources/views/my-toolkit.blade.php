@@ -30,25 +30,31 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-sm-8">
                     <h2 class="font-weight-bold text-center mt-5" ><small><i class="far fa-handshake fa-fw mr-3"></i></small>Free ToolKit</h2>
-                    <p class="lead text-center">Anda bebas menggunakan <strong>ToolKit</strong> dibawah ini untuk membantu pekerjaan anda.</p>
+                    <p class="lead text-center">Gunakan <strong>ToolKit</strong> untuk membantu pekerjaan anda.</p>
                     <div class="row d-flex justify-content-center">
                         {{-- Free ToolKit --}}
-                        <div class="col-xs-12 col-sm-4 col-lg-3">
+                        <div class="col-sm-4 col-lg-3">
                             <a href="{{ route('rename-file.index') }}" class="btn btn-app-new">
                                 <i class="fas fa-file-code"></i>
                                 <strong>Rename File</strong>
                             </a>
                         </div>
                     </div>
+                    <hr>
                 </div>
-                <div class="col-sm-8 mt-5">
+                <div class="col-sm-8">
                     <h2 class="font-weight-bold text-center mt-5" ><small><i class="fas fa-handshake fa-fw mr-3"></i></small>ToolKit Donasi</h2>
                     <p class="text-center lead">
-                        Beri donasi terbaik anda untuk membantu kami mengembangkan <strong>ToolKit</strong> dibawah ini. <br><a href="https://toolkit.lombokdev.web.id/tentang-donasi" target="_blank">Tentang Donasi</a>
+                        Berikan donasi terbaik anda untuk pengembangan Aplikasi <strong>{{ config('app.name') }}</strong>. <br><a href="https://blog-toolkit.lombokdev.web.id/donasi/" target="_blank">Tentang Donasi</a>
                     </p>
                     <div class="row d-flex justify-content-center">
                         {{-- ToolKit Donasi --}}
-                        
+                        <div class="col-sm-4 col-lg-3">
+                            <a href="{{ route('efm.dashboard.index') }}" class="btn btn-app-new">
+                                <i class="fas fa-user-graduate"></i>
+                                <strong>eFormasi Menpan</strong>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

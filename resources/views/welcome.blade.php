@@ -23,7 +23,7 @@
             color: #EF3B2D;margin-bottom: 0px
         }
         .icon {
-            font-size: 1.5rem; color: #fff
+            font-size: 1.5rem;
         }
         
         /* Mobile */

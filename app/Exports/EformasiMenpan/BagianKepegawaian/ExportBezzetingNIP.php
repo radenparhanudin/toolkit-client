@@ -1,3 +1,64 @@
 <?php
-bolt_decrypt( __FILE__ , 'bmmcnc'); return 0;
-##!!!##enre0d3V4+DR09WQseDgzLXo4N/i5OPMtdbf4t3R49m91d7g0d7MstHX2dHeu9Xg1dfR59HZ0d6renrl49WQvdHR5OfV0uPZ5NXMtejT1dzMs9/e09Xi3uPMtejg3+Lk0dLc1at65ePVkL3R0eTn1dLj2eTVzLXo09XczLPf3tPV4t7jzLbi393B5dXi6at65ePVkL3R0eTn1dLj2eTVzLXo09XczLPf3tPV4t7jzMPY3+Xc1LHl5N/D2erVq3rl49WQvdHR5OfV0uPZ5NXMtejT1dzMs9/e09Xi3uPMx9nk2LPl4+Tf3cbR3OXVstne1NXiq3rl49WQvdHR5OfV0uPZ5NXMtejT1dzMs9/e09Xi3uPMx9nk2LjV0dTZ3tfjq3rl49WQvdHR5OfV0uPZ5NXMtejT1dzMs9/e09Xi3uPMx9nk2MPk6dzV46t65ePVkL3f1OXc1ePMtdbf4t3R49m91d7g0d7Mtd7k2eTZ1ePMstHX2dHeu9Xg1dfR59HZ0d7MstXq6tXk2d7Xvtngq3rl49WQwNjgv9bW2dPVzMDY4MPg4tXR1OPY1dXkzLPV3NzMs9Xc3Kt65ePVkMDY4L/W1tnT1czA2ODD4OLV0dTj2NXV5Myz1dzczLTR5NHE6eDVq3rl49WQwNjgv9bW2dPVzMDY4MPg4tXR1OPY1dXkzLPV3NzMtNXW0eXc5MbR3OXVstne1NXiq3rl49WQwNjgv9bW2dPVzMDY4MPg4tXR1OPY1dXkzMff4tvj2NXV5MzH3+Lb49jV1eSrenrT3NHj45C16ODf4uSy1erq1eTZ3te+ucCQ1ejk1d7U45C01dbR5dzkxtHc5dWy2d7U1eKQ2d3g3NXd1d7k45DH2eTYs+Xj5N/dxtHc5dWy2d7U1eKckLbi393B5dXi6ZyQx9nk2LjV0dTZ3tfjnJDD2N/l3NSx5eTfw9nq1ZyQx9nk2MPk6dzV43rrennl49WQtejg3+Lk0dLc1at6epCQkJDg4tnm0eTVkJTb39TVz9PV4NHkq3p6kJCQkODl0tzZ05DW5d7T5Nnf3pDPz9Pf3uPk4uXT5Jjj5OLZ3teQlNvf1NXP09Xg0eSZkHqQkJCQ63qQkJCQkJCQkJTk2Nnjna7b39TVz9PV4NHkkK2QlNvf1NXP09Xg0eSrepCQkJDtenqQkJCQ4OXS3NnTkNbl3tPk2d/ekOHl1eLpmJl6kJCQkOt6kJCQkJCQkJDi1eTl4t6QstXq6tXk2d7Xvtngqqrh5dXi6ZiZna7i2dfY5Lrf2d6Yl9XW3c/S38/S1erq1eTZ3teXnJCX1dbdz9Lfz9LV6urV5Nne157V1t3P2NXR1M/Z1JeckJetl5yQl9XW3c/S28/S1erq1eTZ3tfP3tngntXW3c/Y1dHUz9nUl5l6kJCQkJCQkJCdruPV3NXT5Jh6kJCQkJCQkJCQkJCQl9XW3c/S38/S1erq1eTZ3tee29/U1c/T1eDR5JeckJfV1t3P0t/P0tXq6tXk2d7Xnt7R3dGQ0eOQ3tHd0c/a0dLR5NHel5yQl9XW3c/S28/S1erq1eTZ3tfP3tngnt7Z4JeckJfV1t3P0tvP0tXq6tXk2d7Xz97Z4J7e0d3Rl5yQl9XW3c/S28/S1erq1eTZ3tfP3tngnuDV3uPZ5d6XnJCX1dbdz9Lbz9LV6urV5Nne18/e2eCe4+TR5OXjz+DV19Hn0dmXnJCX1dbdz9Lfz9LV6urV5Nne157U1eTR2dyXepCQkJCQkJCQmZ2u59jV4tWYl9XW3c/S38/S1erq1eTZ3tee29/U1c/T1eDR5JeckJfc2dvVl5yQlOTY2eOdrtvf1NXP09Xg0eSQnpCSlZKZna7f4tTV4rLpmJfV1t3P0t/P0tXq6tXk2d7Xntvf1NXP09Xg0eSXmat6kJCQkO16epCQkJDg5dLc2dOQ1uXe0+TZ396Q2NXR1Nne1+OYmaqQ0eLi0el6kJCQkOt6kJCQkJCQkJDi1eTl4t6Qy3qQkJCQkJCQkJCQkJCXu9/U1ZCz1eDR5JeckJe+0d3RkLrR0tHk0d6XnJCXvrnAl5yQl77R3dGXnJCXwNXe49nl3peckJfD5NHk5eOQwNXX0efR2ZeckJfA3+PZ49mXepCQkJCQkJCQzat6kJCQkO16epCQkJDg5dLc2dOQ1uXe0+TZ396Q0tne1MbR3OXVmLPV3NyQlNPV3NyckJTm0dzl1Zl6kJCQkOt6kJCQkJCQkJDZ1pCY2ePP3uXd1eLZ05iU5tHc5dWZmZDrepCQkJCQkJCQkJCQkJTT1dzcna7j1eTG0dzl1bXo4NzZ09nkmJTm0dzl1ZyQtNHk0cTp4NWqqsTJwLXPw8TCub63mat6epCQkJCQkJCQkJCQkOLV5OXi3pDk4uXVq3qQkJCQkJCQkO16kJCQkJCQkJCfn5DV3OPVkOLV5OXi3pDU1dbR5dzkkNLV2NHm2d/iepCQkJCQkJCQ4tXk5eLekODR4tXe5Kqq0tne1MbR3OXVmJTT1dzcnJCU5tHc5dWZq3qQkJCQ7Xp6kJCQkODl0tzZ05DW5d7T5Nnf3pDj5Onc1eOYx9/i2+PY1dXkkJTj2NXV5Jl6kJCQkOt6kJCQkJCQkJDi1eTl4t6Qy3qQkJCQkJCQkJCQkJChkJCQkK2ukMt6kJCQkJCQkJCQkJCQkJCQkJfW397kl5CtrpDLepCQkJCQkJCQkJCQkJCQkJCQkJCQl9Lf3NSXkK2ukOTi5dV6kJCQkJCQkJCQkJCQkJCQkM16kJCQkJCQkJCQkJCQzZx6kJCQkJCQkJDNq3qQkJCQ7Xrt
+
+namespace App\Exports\EformasiMenpan\BagianKepegawaian;
+
+use Maatwebsite\Excel\Concerns\Exportable;
+use Maatwebsite\Excel\Concerns\FromQuery;
+use Maatwebsite\Excel\Concerns\ShouldAutoSize;
+use Maatwebsite\Excel\Concerns\WithCustomValueBinder;
+use Maatwebsite\Excel\Concerns\WithHeadings;
+use Maatwebsite\Excel\Concerns\WithStyles;
+use Modules\EformasiMenpan\Entities\BagianKepegawaian\BezzetingNip;
+use PhpOffice\PhpSpreadsheet\Cell\Cell;
+use PhpOffice\PhpSpreadsheet\Cell\DataType;
+use PhpOffice\PhpSpreadsheet\Cell\DefaultValueBinder;
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+
+class ExportBezzetingNIP extends DefaultValueBinder implements WithCustomValueBinder, FromQuery, WithHeadings, ShouldAutoSize, WithStyles
+{
+	use Exportable;
+
+    private $kode_cepat;
+
+    public function __construct(string $kode_cepat) 
+    {
+        $this->kode_cepat = $kode_cepat;
+    }
+
+    public function query()
+    {
+        return BezzetingNip::query()->rightJoin('efm_bo_bezzeting', 'efm_bo_bezzeting.efm_head_id', '=', 'efm_bk_bezzeting_nip.efm_head_id')
+        ->select(
+            'efm_bo_bezzeting.kode_cepat', 'efm_bo_bezzeting.nama as nama_jabatan', 'efm_bk_bezzeting_nip.nip', 'efm_bk_bezzeting_nip.nama', 'efm_bk_bezzeting_nip.pensiun', 'efm_bk_bezzeting_nip.status_pegawai', 'efm_bo_bezzeting.detail'
+        )->where('efm_bo_bezzeting.kode_cepat', 'like', $this->kode_cepat . "%")->orderBy('efm_bo_bezzeting.kode_cepat');
+    }
+
+    public function headings(): array
+    {
+        return [
+            'Kode Cepat', 'Nama Jabatan', 'NIP', 'Nama', 'Pensiun', 'Status Pegawai', 'Posisi'
+        ];
+    }
+
+    public function bindValue(Cell $cell, $value)
+    {
+        if (is_numeric($value)) {
+            $cell->setValueExplicit($value, DataType::TYPE_STRING);
+
+            return true;
+        }
+        // else return default behavior
+        return parent::bindValue($cell, $value);
+    }
+
+    public function styles(Worksheet $sheet)
+    {
+        return [
+            1    => [
+                'font' => [
+                    'bold' => true
+                ]
+            ],
+        ];
+    }
+}

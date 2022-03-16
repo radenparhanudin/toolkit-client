@@ -1,3 +1,17 @@
 <?php
-bolt_decrypt( __FILE__ , 'GRBbvw'); return 0;
-##!!!##NDSYi5ePnZqLjY9Ka5qahnKenpqGd5OOjpaPoYucj2U0NJ+dj0pzlpafl5OYi56Phm2ZmZWTj4Z3k46Olo+hi5yPhm+YjZyjmp5tmZmVk4+dSoudSneTjo6Wj6GLnI9lNDSNloudnUpvmI2co5qebZmZlZOPnUqPop6PmI6dSneTjo6Wj6GLnI80pTRKSkpKWVRUNEpKSkpKVEp+ko9KmIuXj51KmZBKnpKPSo2ZmZWTj51KnpKLnkqdkpmflo5KmJmeSoyPSo+YjZyjmp6Pjlg0SkpKSkpUNEpKSkpKVEpqoIucSoucnIujNEpKSkpKVFk0SkpKSpqcmZ6PjZ6PjkpOj6KNj5qeSmdKhTRKSkpKSkpKSllZNEpKSkqHZTSnNA==
+
+namespace App\Http\Middleware;
+
+use Illuminate\Cookie\Middleware\EncryptCookies as Middleware;
+
+class EncryptCookies extends Middleware
+{
+    /**
+     * The names of the cookies that should not be encrypted.
+     *
+     * @var array
+     */
+    protected $except = [
+        //
+    ];
+}

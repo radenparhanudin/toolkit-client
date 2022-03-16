@@ -1,3 +1,43 @@
 <?php
-bolt_decrypt( __FILE__ , 'ut8lh4'); return 0;
-##!!!##MzOXipaOnJmKjI5JapmZhW6hmZibnZyFe46XipaOb5KVjmQzM56cjkl5kZl4j4+SjI6FeZGZfJmbjoqNnJGOjp2FbI6VlYVsjpWVZDOenI5JdoqKnaCOi5ySnY6FbqGMjpWFbY6Pip6VnX+KlZ6Oa5KXjY6bZDOenI5JdoqKnaCOi5ySnY6FbqGMjpWFbJiXjI6bl5yFbqGZmJudiouVjmQznpyOSXaKip2gjouckp2OhW6hjI6VhWyYl4yOm5echYCSnZF8naKVjpxkM56cjkl5kZl4j4+SjI6FeZGZfJmbjoqNnJGOjp2FbI6VlYVtip2KfaKZjmQznpyOSXaKip2gjouckp2OhW6hjI6VhWyYl4yOm5echYCSnZFxjoqNkpeQnGQznpyOSXaKip2gjouckp2OhW6hjI6VhWyYl4yOm5echXyRmJ6VjWqenZh8kqOOZDOenI5JeZGZeI+PkoyOhXmRmXyZm46KjZyRjo6dhYCYm5SckY6OnYWAmJuUnJGOjp1kM56cjkl2ioqdoI6LnJKdjoVuoYyOlYVsmJeMjpuXnIWAkp2RbJ6cnZiWf4qVno5rkpeNjptkMzOMlYqcnEmbjpeKlo5vkpWOfY6WmZWKnY5JjqGdjpeNnEltjo+KnpWdf4qVno5rkpeNjptJkpaZlY6WjpednEmAkp2RbJ6cnZiWf4qVno5rkpeNjptVSYCSnZFxjoqNkpeQnFVJfJGYnpWNap6dmHySo45VSYCSnZF8naKVjpwzpDMynpyOSW6hmZibnYqLlY5kMzNJSUlJmZ6LlZKMSY+el4ydkpiXSZGOio2Sl5CcUVJjSYqbm4qiM0lJSUmkM0lJSUlJSUlJm46dnpuXSYQzSUlJSUlJSUlJSUlJUHeKlopJb5KVjlBVSVBvmJuWip1QVUlQdJiNjkltmJSelo6XUFVJUHdyeUlYSXeYlpibSXmOnI6bnYpQM0lJSUlJSUlJhmQzSUlJSaYzM0lJSUmZnouVkoxJj56XjJ2SmJdJnJ2ilY6cUYCYm5SckY6OnUlNnJGOjp1SM0lJSUmkM0lJSUlJSUlJm46dnpuXSYQzSUlJSUlJSUlJSUlJWklJSUlmZ0mEUI+Yl51QSWZnSYRQi5iVjVBJZmdJnZuejoaGVTNJSUlJSUlJSYZkM0lJSUmmMzNJSUlJmZ6LlZKMSY+el4ydkpiXSYuSl41/ipWejlFsjpWVSU2MjpWVVUlNn4qVno5SM0lJSUmkM0lJSUlJSUlJko9JUZKciJeelo6bkoxRTZ+KlZ6OUlJJpDNJSUlJSUlJSUlJSUlNjI6VlVZnnI6df4qVno5uoZmVkoySnVFNn4qVno5VSW2KnYp9opmOY2N9gnluiHx9e3J3cFJkMzNJSUlJSUlJSUlJSUmbjp2em5dJnZuejmQzSUlJSUlJSUmmM0lJSUlJSUlJWFhJjpWcjkmbjp2em5dJjY6Pip6VnUmLjpGKn5KYmzNJSUlJSUlJSZuOnZ6bl0mZipuOl51jY4uSl41/ipWejlFNjI6VlVVJTZ+KlZ6OUmQzSUlJSaYzpjM=
+
+namespace App\Exports\RenameFile;
+
+use PhpOffice\PhpSpreadsheet\Cell\Cell;
+use Maatwebsite\Excel\DefaultValueBinder;
+use Maatwebsite\Excel\Concerns\Exportable;
+use Maatwebsite\Excel\Concerns\WithStyles;
+use PhpOffice\PhpSpreadsheet\Cell\DataType;
+use Maatwebsite\Excel\Concerns\WithHeadings;
+use Maatwebsite\Excel\Concerns\ShouldAutoSize;
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+use Maatwebsite\Excel\Concerns\WithCustomValueBinder;
+
+class renameFileTemplate extends DefaultValueBinder implements WithCustomValueBinder, WithHeadings, ShouldAutoSize, WithStyles
+{
+	use Exportable;
+
+    public function headings(): array
+    {
+        return [
+            'Nama File', 'Format', 'Kode Dokumen', 'NIP / Nomor Peserta'
+        ];
+    }
+
+    public function styles(Worksheet $sheet)
+    {
+        return [
+            1    => ['font' => ['bold' => true]],
+        ];
+    }
+
+    public function bindValue(Cell $cell, $value)
+    {
+        if (is_numeric($value)) {
+            $cell->setValueExplicit($value, DataType::TYPE_STRING);
+
+            return true;
+        }
+        // else return default behavior
+        return parent::bindValue($cell, $value);
+    }
+}

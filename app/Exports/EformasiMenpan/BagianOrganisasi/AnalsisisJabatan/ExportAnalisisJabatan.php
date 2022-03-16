@@ -1,3 +1,53 @@
 <?php
-bolt_decrypt( __FILE__ , 'XfUW2n'); return 0;
-##!!!##FBR4a3dvfXprbW8qS3p6Zk+Cenl8fn1mT3B5fHdrfXNXb3h6a3hmTGtxc2t4WXxxa3hzfWt9c2ZLeGt2fXN9c31Ua2xrfmt4RRQUf31vKldra36Bb2x9c35vZk+CbW92Zk15eG1vfHh9Zk+Cenl8fmtsdm9FFH99bypXa2t+gW9sfXN+b2ZPgm1vdmZNeXhtb3x4fWZQfHl3W39vfINFFH99bypXa2t+gW9sfXN+b2ZPgm1vdmZNeXhtb3x4fWZdcnl/dm5Lf355XXOEb0UUf31vKldra36Bb2x9c35vZk+CbW92Zk15eG1vfHh9ZmFzfnJNf31+eXdga3Z/b0xzeG5vfEUUf31vKldra36Bb2x9c35vZk+CbW92Zk15eG1vfHh9ZmFzfnJSb2tuc3hxfUUUf31vKldra36Bb2x9c35vZk+CbW92Zk15eG1vfHh9ZmFzfnJdfoN2b31FFH99bypXeW5/dm99Zk9weXx3a31zV294emt4Zk94fnN+c299ZkxrcXNreFl8cWt4c31rfXNmS3hrdnN9c31Ua2xrfmt4Zkt4a3ZzfXN9VGtsa35reEUUf31vKlpyellwcHNtb2Zacnpdenxva259cm9vfmZNb3Z2Zk1vdnZFFH99bypacnpZcHBzbW9mWnJ6XXp8b2tufXJvb35mTW92dmZOa35rXoN6b0UUf31vKlpyellwcHNtb2Zacnpdenxva259cm9vfmZNb3Z2Zk5vcGt/dn5ga3Z/b0xzeG5vfEUUf31vKlpyellwcHNtb2Zacnpdenxva259cm9vfmZheXx1fXJvb35mYXl8dX1yb29+RRQUbXZrfX0qT4J6eXx+S3hrdnN9c31Ua2xrfmt4Km+Cfm94bn0qTm9wa392fmBrdn9vTHN4bm98KnN3enZvd294fn0qYXN+ck1/fX55d2Brdn9vTHN4bm98NipQfHl3W39vfIM2KmFzfnJSb2tuc3hxfTYqXXJ5f3ZuS39+eV1zhG82KmFzfnJdfoN2b30UhRQTf31vKk+Cenl8fmtsdm9FFBQqKioqen9sdnNtKnB/eG1+c3l4Knt/b3yDMjMUKioqKoUUFCoqKioqKioqfG9+f3x4Kkt4a3ZzfXN9VGtsa35reEREe39vfIMyMzdIfW92b21+MhQqKioqKioqKioqKioxc24xNioxb3B3aXNuMTYqMXN4fX5reH1zMTYqMXR/bn92MTYqMW5rfmtpfX5rfn99MRQqKioqKioqKjM3SHl8bm98TIMyMXR/bn92MTNFFCoqKiqHFBQqKioqen9sdnNtKnB/eG1+c3l4KnJva25zeHF9MjNEKmt8fGuDFCoqKiqFFCoqKioqKioqfG9+f3x4KmUUKioqKioqKioqKioqMVNOMTYqMUt4dGtsKlNOMTYqMVN4fX5reH1zMTYqMVR/bn92MTYqMU5rfmsqXX5rfn99MRQqKioqKioqKmdFFCoqKiqHFBQqKioqen9sdnNtKnB/eG1+c3l4KmxzeG5ga3Z/bzJNb3Z2Ki5tb3Z2NiougGt2f28zFCoqKiqFFCoqKioqKioqc3AqMnN9aXh/d298c20yLoBrdn9vMzMqhRQqKioqKioqKioqKioubW92djdIfW9+YGt2f29Pgnp2c21zfjIugGt2f282Kk5rfmteg3pvREReY1pPaV1eXFNYUTNFFBQqKioqKioqKioqKip8b35/fHgqfnx/b0UUKioqKioqKiqHFCoqKioqKioqOTkqb3Z9byp8b35/fHgqbm9wa392fipsb3JrgHN5fBQqKioqKioqKnxvfn98eCp6a3xveH5ERGxzeG5ga3Z/bzIubW92djYqLoBrdn9vM0UUKioqKocUFCoqKip6f2x2c20qcH94bX5zeXgqfX6Ddm99MmF5fHV9cm9vfioufXJvb34zFCoqKiqFFCoqKioqKioqfG9+f3x4KmUUKioqKioqKioqKioqOyoqKipHSCplMXB5eH4xKkdIKmUxbHl2bjEqR0gqfnx/b2dnNhQqKioqKioqKmdFFCoqKiqHFIc=
+
+namespace App\Exports\EformasiMenpan\BagianOrganisasi\AnalsisisJabatan;
+
+use Maatwebsite\Excel\Concerns\Exportable;
+use Maatwebsite\Excel\Concerns\FromQuery;
+use Maatwebsite\Excel\Concerns\ShouldAutoSize;
+use Maatwebsite\Excel\Concerns\WithCustomValueBinder;
+use Maatwebsite\Excel\Concerns\WithHeadings;
+use Maatwebsite\Excel\Concerns\WithStyles;
+use Modules\EformasiMenpan\Entities\BagianOrganisasi\AnalisisJabatan\AnalisisJabatan;
+use PhpOffice\PhpSpreadsheet\Cell\Cell;
+use PhpOffice\PhpSpreadsheet\Cell\DataType;
+use PhpOffice\PhpSpreadsheet\Cell\DefaultValueBinder;
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+
+class ExportAnalisisJabatan extends DefaultValueBinder implements WithCustomValueBinder, FromQuery, WithHeadings, ShouldAutoSize, WithStyles
+{
+	use Exportable;
+
+    public function query()
+    {
+
+        return AnalisisJabatan::query()->select(
+            'id', 'efm_id', 'instansi', 'judul', 'data_status'
+        )->orderBy('judul');
+    }
+
+    public function headings(): array
+    {
+        return [
+            'ID', 'Anjab ID', 'Instansi', 'Judul', 'Data Status'
+        ];
+    }
+
+    public function bindValue(Cell $cell, $value)
+    {
+        if (is_numeric($value)) {
+            $cell->setValueExplicit($value, DataType::TYPE_STRING);
+
+            return true;
+        }
+        // else return default behavior
+        return parent::bindValue($cell, $value);
+    }
+
+    public function styles(Worksheet $sheet)
+    {
+        return [
+            1    => ['font' => ['bold' => true]],
+        ];
+    }
+}

@@ -113,6 +113,57 @@ $(document).ready(function(){
         })
     });
 
+    $('#formUploadModalDatatable').submit(function (event) {
+        event.preventDefault();
+        var formUploadModalDatatable = $('#formUploadModalDatatable');
+            action     = formUploadModalDatatable.attr('action');
+            method     = formUploadModalDatatable.attr('method');
+            data       = new FormData(formUploadModalDatatable[0]);
+    
+        $('.form-control').removeClass('is-invalid')
+        $('.invalid-feedback').html('')
+        $.ajax({
+            url: action,
+            type: method,
+            data: data,
+            processData: false,
+            contentType: false,
+            cache: false,
+            beforeSend: function () {
+                HoldOn.open({
+                    message: "Upload data sedang berjalan!"
+                })
+            },
+            success: function (res) {
+                HoldOn.close()
+                if(res.status){
+                    Swal.fire({
+                        icon: 'success',
+                        html: res.message
+                    })
+                    $('#modalFormUploadDatatable').modal('hide')
+                    $('#dataTableDefault').DataTable().ajax.reload(null, false);
+                }
+                else{
+                    Swal.fire({
+                        icon: 'error',
+                        html: res.message
+                    })
+                }
+            },
+            error: function (xhr) {
+                HoldOn.close()
+                var res = xhr.responseJSON;
+                if ($.isEmptyObject(res) == false) {
+                    $.each(res.errors, function (key, value) {
+                        $('#' + key).addClass('is-invalid')
+                        $('#feedback_' + key).html(value[0])
+                    });
+                }
+            }
+        })
+    });
+
     $('#formCariModalDatatable').submit(function (event) {
         event.preventDefault();
         action = $('#formCariModalDatatable').attr('action');

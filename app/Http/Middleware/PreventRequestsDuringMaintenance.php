@@ -1,3 +1,17 @@
 <?php
-bolt_decrypt( __FILE__ , 'hbxLKU'); return 0;
-##!!!##ODicj5uToZ6PkZNOb56einaiop6Ke5eSkpqTpY+gk2k4OKOhk053mpqjm5ecj6KTinSdo5ySj6KXnZyKdqKinop7l5KSmpOlj6CTin6gk6STnKKAk5+jk6GioXKjoJeclXuPl5yik5yPnJGTTo+hTnuXkpKak6WPoJNpODiRmo+hoU5+oJOkk5yigJOfo5OhoqFyo6CXnJV7j5ecopOcj5yRk06TpqKTnJKhTnuXkpKak6WPoJM4qThOTk5OXVhYOE5OTk5OWE6ClpNOg4B3oU6ilo+iTqGWnaOakk6Qk06gk4+Rlo+QmpNOpZaXmpNOm4+XnKKTnI+ckZNOm52Sk06XoU6TnI+QmpOSXDhOTk5OTlg4Tk5OTk5YTm6kj6BOj6Cgj6c4Tk5OTk5YXThOTk5OnqCdopORopOSTlKTppGTnqJOa06JOE5OTk5OTk5OXV04Tk5OTotpOKs4
+
+namespace App\Http\Middleware;
+
+use Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance as Middleware;
+
+class PreventRequestsDuringMaintenance extends Middleware
+{
+    /**
+     * The URIs that should be reachable while maintenance mode is enabled.
+     *
+     * @var array
+     */
+    protected $except = [
+        //
+    ];
+}

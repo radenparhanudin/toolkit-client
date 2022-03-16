@@ -1,0 +1,13 @@
+{
+    "name": "DocudigitalUploader",
+    "alias": "docudigitaluploader",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\DocudigitalUploader\\Providers\\DocudigitalUploaderServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

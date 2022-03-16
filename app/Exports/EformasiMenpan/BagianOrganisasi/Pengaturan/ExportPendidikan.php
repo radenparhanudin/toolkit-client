@@ -1,3 +1,53 @@
 <?php
-bolt_decrypt( __FILE__ , 'nHfbmo'); return 0;
-##!!!##ZGTIu8e/zcq7vb96m8rKtp/SysnMzs22n8DJzMe7zcOnv8jKu8i2nLvBw7vIqczBu8jDzbvNw7aqv8jBu87PzLvIlWRkz82/eqe7u87Rv7zNw86/tp/Svb/Gtp3JyL2/zMjNtp/SysnMzru8xr+VZM/Nv3qnu7vO0b+8zcPOv7af0r2/xradyci9v8zIzbagzMnHq8+/zNOVZM/Nv3qnu7vO0b+8zcPOv7af0r2/xradyci9v8zIzbatwsnPxr6bz87JrcPUv5Vkz82/eqe7u87Rv7zNw86/tp/Svb/Gtp3JyL2/zMjNtrHDzsKdz83Oycewu8bPv5zDyL6/zJVkz82/eqe7u87Rv7zNw86/tp/Svb/Gtp3JyL2/zMjNtrHDzsKiv7u+w8jBzZVkz82/eqe7u87Rv7zNw86/tp/Svb/Gtp3JyL2/zMjNtrHDzsKtztPGv82VZM/Nv3qnyb7Pxr/Ntp/AyczHu83Dp7/IyrvItp/IzsPOw7/Ntpy7wcO7yKnMwbvIw827zcO2qr/IwbvOz8y7yLaqv8i+w77DxbvIlWTPzb96qsLKqcDAw72/tqrCyq3KzL+7vs3Cv7/Otp2/xsa2nb/GxpVkz82/eqrCyqnAwMO9v7aqwsqtysy/u77Nwr+/zradv8bGtp67zruu08q/lWTPzb96qsLKqcDAw72/tqrCyq3KzL+7vs3Cv7/Otp2/xsa2nr/Au8/GzrC7xs+/nMPIvr/MlWTPzb96qsLKqcDAw72/tqrCyq3KzL+7vs3Cv7/OtrHJzMXNwr+/zraxyczFzcK/v86VZGS9xrvNzXqf0srJzM6qv8i+w77DxbvIer/Szr/Ivs16nr/Au8/GzrC7xs+/nMPIvr/MesPHysa/x7/Izs16scPOwp3Pzc7Jx7C7xs+/nMPIvr/MhnqgzMnHq8+/zNOGerHDzsKiv7u+w8jBzYZ6rcLJz8a+m8/Oya3D1L+GerHDzsKtztPGv81k1WRjz82/ep/SysnMzru8xr+VZGR6enp6ys+8xsO9esDPyL3Ow8nIesvPv8zTgoNkenp6etVkZHp6enp6enp6zL/Oz8zIeqq/yL7DvsPFu8iUlMvPv8zTgoOHmM2/xr+9zoJkenp6enp6enp6enp6gb/Ax7nDvoGGeoHIu8e7gWR6enp6enp6eoOHmMnMvr/MnNOCgci7x7uBg5Vkenp6etdkZHp6enrKz7zGw716wM/Ivc7Dych6wr+7vsPIwc2Cg5R6u8zMu9Nkenp6etVkenp6enp6enrMv87PzMh6tWR6enp6enp6enp6enqBo56BhnqBqr/IvsO+w8W7yIFkenp6enp6enq3lWR6enp612Rkenp6esrPvMbDvXrAz8i9zsPJyHq8w8i+sLvGz7+Cnb/Gxnp+vb/GxoZ6ftC7xs+/g2R6enp61WR6enp6enp6esPAeoLDzbnIz8e/zMO9gn7Qu8bPv4ODetVkenp6enp6enp6enp6fr2/xsaHmM2/zrC7xs+/n9LKxsO9w86CftC7xs+/hnqeu867rtPKv5SUrrOqn7mtrqyjqKGDlWRkenp6enp6enp6enp6zL/Oz8zIes7Mz7+VZHp6enp6enp612R6enp6enp6eomJer/Gzb96zL/Oz8zIer6/wLvPxs56vL/Cu9DDycxkenp6enp6enrMv87PzMh6yrvMv8jOlJS8w8i+sLvGz7+Cfr2/xsaGen7Qu8bPv4OVZHp6enrXZGR6enp6ys+8xsO9esDPyL3Ow8nIes3O08a/zYKxyczFzcK/v856fs3Cv7/Og2R6enp61WR6enp6enp6esy/zs/MyHq1ZHp6enp6enp6enp6eot6enp6l5h6tYHAycjOgXqXmHq1gbzJxr6BepeYes7Mz7+3t4Zkenp6enp6enq3lWR6enp612TX
+
+namespace App\Exports\EformasiMenpan\BagianOrganisasi\Pengaturan;
+
+use Maatwebsite\Excel\Concerns\Exportable;
+use Maatwebsite\Excel\Concerns\FromQuery;
+use Maatwebsite\Excel\Concerns\ShouldAutoSize;
+use Maatwebsite\Excel\Concerns\WithCustomValueBinder;
+use Maatwebsite\Excel\Concerns\WithHeadings;
+use Maatwebsite\Excel\Concerns\WithStyles;
+use Modules\EformasiMenpan\Entities\BagianOrganisasi\Pengaturan\Pendidikan;
+use PhpOffice\PhpSpreadsheet\Cell\Cell;
+use PhpOffice\PhpSpreadsheet\Cell\DataType;
+use PhpOffice\PhpSpreadsheet\Cell\DefaultValueBinder;
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+
+class ExportPendidikan extends DefaultValueBinder implements WithCustomValueBinder, FromQuery, WithHeadings, ShouldAutoSize, WithStyles
+{
+	use Exportable;
+
+    public function query()
+    {
+
+        return Pendidikan::query()->select(
+            'efm_id', 'nama'
+        )->orderBy('nama');
+    }
+
+    public function headings(): array
+    {
+        return [
+            'ID', 'Pendidikan'
+        ];
+    }
+
+    public function bindValue(Cell $cell, $value)
+    {
+        if (is_numeric($value)) {
+            $cell->setValueExplicit($value, DataType::TYPE_STRING);
+
+            return true;
+        }
+        // else return default behavior
+        return parent::bindValue($cell, $value);
+    }
+
+    public function styles(Worksheet $sheet)
+    {
+        return [
+            1    => ['font' => ['bold' => true]],
+        ];
+    }
+}

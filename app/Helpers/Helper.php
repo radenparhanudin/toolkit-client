@@ -1,3 +1,34 @@
 <?php
-bolt_decrypt( __FILE__ , '6WaOsp'); return 0;
-##!!!##LSotKpWThUBpjIyVjYmOgZSFfHOVkJCPkpR8ZoGDgYSFk3xyj5WUhVstKi0qiYZASEFAhpWOg5SJj45/hZiJk5STSEeThZR/gYOUiZaFR0lJQJstKkBAQECGlY6DlImPjkCThZR/gYOUiZaFSESVkolMQESPlZSQlZRAXUBHgYOUiZaFR0ktKkBAQECbLSpAQEBAQEBAQImGSECJk3+BkpKBmUhElZKJSUBJQJstKkBAQEBAQEBAQEBAQIaPkoWBg4hASESVkolAgZNARJVJQJstKkBAQEBAQEBAQEBAQEBAQECJhkBIco+VlIVaWomTSESVSUlAmy0qQEBAQEBAQEBAQEBAQEBAQEBAQECShZSVko5ARI+VlJCVlFstKkBAQEBAQEBAQEBAQEBAQECdLSpAQEBAQEBAQEBAQECdLSpAQEBAQEBAQJ1AhYyThUCbLSpAQEBAQEBAQEBAQECJhkBIco+VlIVaWomTSESVkolJSZstKkBAQEBAQEBAQEBAQEBAQECShZSVko5ARI+VlJCVlFstKkBAQEBAQEBAQEBAQJ0tKkBAQEBAQEBAnS0qQEBAQJ0tKp0tKi0qiYZASEFAhpWOg5SJj45/hZiJk5STSEeUj4+Mi4mUf4mOho9HSUlAmy0qQEBAQIaVjoOUiY+OQJSPj4yLiZR/iY6Gj0hEi4WZSS0qQEBAQJstKkBAQEBAQEBARJSPj4yLiZR/iY6Gj0BdQIGSkoGZSC0qQEBAQEBAQEBAQEBAR5aFkpOJj45HQEBAXV5AQlFOUEJMLSpAQEBAQEBAQEBAQEBHhIWWhYyPkIWSR0BdXkBCcoGEhY5AcIGSiIGOlYSJjkJMLSpAQEBAQEBAQEBAQEBHl4iBlJOBkJBHQEBdXkBCiJSUkJNaT0+XgU6NhU9WUlhSU1RSV1hYUFVZQkwtKkBAQEBAQEBASVstKi0qQEBAQEBAQECShZSVko5ARJSPj4yLiZR/iY6Gj3tEi4WZfVstKkBAQECdLSqdLSotKg==
+
+use Illuminate\Support\Facades\Route;
+
+if (! function_exists('set_active')) {
+    function set_active($uri, $output = 'active')
+    {
+        if( is_array($uri) ) {
+            foreach ($uri as $u) {
+                if (Route::is($u)) {
+                    return $output;
+                }
+            }
+        } else {
+            if (Route::is($uri)){
+                return $output;
+            }
+        }
+    }
+}
+
+if (! function_exists('toolkit_info')) {
+    function toolkit_info($key)
+    {
+        $toolkit_info = array(
+            'version'   => "1.0",
+            'developer' => "Raden Parhanudin",
+            'whatsapp'  => "https://wa.me/6282342788059",
+        );
+
+        return $toolkit_info[$key];
+    }
+}
+

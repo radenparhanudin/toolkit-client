@@ -1,3 +1,13 @@
 <?php
-bolt_decrypt( __FILE__ , 'b0Rwoe'); return 0;
-##!!!##OTmdkJyUop+QkpRPcJ+fajk5pKKUT3aem5OCn5SSc5iWmKOQm4t7kKGQpZSbdJueoKSUnaOEhHhzi3OQo5CRkKKUi3SbnqCklJ2ji3yek5Sbajk5kpuQoqJPf5SdlpCjpKGQnU+Up6OUnZOiT3yek5SbOao5T09PT5+hnqOUkqOUk09To5CRm5RPT09PbE9Wn5SdlpCjpKGQnVZqOU9PT0+foZ6jlJKjlJNPU5WYm5uQkZuUT2xPijlPT09PT09PT1aYk1ZbT1aUnJCYm1ZbT1adkJyQVltPVpmQkZCjkJ1WW09WmJ2io5CdophWW09WkqGUkKOUk46Qo1ZbT1akn5OQo5STjpCjVjlPT09PjGo5rDk=
+
+namespace App;
+
+use GoldSpecDigital\LaravelEloquentUUID\Database\Eloquent\Model;
+
+class Pengaturan extends Model
+{
+    protected $table    = 'pengaturan';
+    protected $fillable = [
+        'id', 'email', 'nama', 'jabatan', 'instansi', 'created_at', 'updated_at'
+    ];
+}

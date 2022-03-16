@@ -1,3 +1,23 @@
 <?php
-bolt_decrypt( __FILE__ , 'sSmjLo'); return 0;
-##!!!##YmLGucW9y8i5u714mcjItKDMzMi0pcG8vMS9z7nKvZNiYs3LvXiewby9xMfIvcq0qMrH0NG0rMrNy8yoysfQwb3LeLnLeKXBvLzEvc+5yr2TYs3LvXihxMTNxcHGucy9tKDMzMi0qr3Jzb3LzJNiYrvEucvLeKzKzcvMqMrH0MG9y3i90My9xrzLeKXBvLzEvc+5yr1i02J4eHh4h4KCYnh4eHh4gniswL14zMrNy8y9vHjIysfQwb3LeL7HynjMwMHLeLnIyMTBu7nMwcfGhmJ4eHh4eIJieHh4eHiCeJjOucp4ucrKudHUy8zKwca/1MbNxMRieHh4eHiCh2J4eHh4yMrHzL27zL28eHzIysfQwb3Lk2JieHh4eIeCgmJ4eHh4eIJ4rMC9eMC9uby9yst4zMC5zHjLwMfNxLx4ur14zcu9vHjMx3i8vcy9u8x4yMrH0MG9y4ZieHh4eHiCYnh4eHh4gniYzrnKeMHGzGJ4eHh4eIKHYnh4eHjIysfMvbvMvbx4fMC9uby9yst4lXiqvcnNvcvMkpKgnZmcnaq3sLeep6qvmaqcnZy3maSkk2LVYg==
+
+namespace App\Http\Middleware;
+
+use Fideloper\Proxy\TrustProxies as Middleware;
+use Illuminate\Http\Request;
+
+class TrustProxies extends Middleware
+{
+    /**
+     * The trusted proxies for this application.
+     *
+     * @var array|string|null
+     */
+    protected $proxies;
+
+    /**
+     * The headers that should be used to detect proxies.
+     *
+     * @var int
+     */
+    protected $headers = Request::HEADER_X_FORWARDED_ALL;
+}

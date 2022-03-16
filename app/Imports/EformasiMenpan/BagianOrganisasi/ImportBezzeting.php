@@ -1,3 +1,21 @@
 <?php
-bolt_decrypt( __FILE__ , 'Uj9QVu'); return 0;
-##!!!##Hh6CdYF5h4R1d3k0VYSEcF2BhIOGiIdwWXqDhoF1h31heYKEdYJwVnV7fXWCY4Z7dYJ9h3WHfU8eHomHeTRhdXWIi3l2h32IeXBZjHd5gHBXg4J3eYaCh3Bog2GDeHmATx6Jh3k0YYN4iYB5h3BZeoOGgXWHfWF5goR1gnBZgoh9iH15h3BWdXt9dYJjhnt1gn2HdYd9cFZ5jo55iH2Ce08eHneAdYeHNF2BhIOGiFZ5jo55iH2CezR9gYSAeYF5goiHNGiDYYN4eYAejx40NDQ0Qz4+HjQ0NDQ+NFSEdYZ1gTR1hoZ1jTQ4hoOLHjQ0NDQ+HjQ0NDQ+NFSGeYiJhoI0cF2AgImBfYJ1iHlwWHWIdXZ1h3lwWYCDhYl5gohwYYN4eYCQgomAgB40NDQ0PkMeNDQ0NISJdoB9dzR6iYJ3iH2DgjSBg3h5gDx1hoZ1jTQ4hoOLPR40NDQ0jx40NDQ0NDQ0NIZ5iImGgjSCeYs0VnmOjnmIfYJ7PG8eNDQ0NDQ0NDQ0NDQ0Q0MeNDQ0NDQ0NDRxPU8eNDQ0NJEekR4=
+
+namespace App\Imports\EformasiMenpan\BagianOrganisasi;
+
+use Maatwebsite\Excel\Concerns\ToModel;
+use Modules\EformasiMenpan\Entities\BagianOrganisasi\Bezzeting;
+
+class ImportBezzeting implements ToModel
+{
+    /**
+    * @param array $row
+    *
+    * @return \Illuminate\Database\Eloquent\Model|null
+    */
+    public function model(array $row)
+    {
+        return new Bezzeting([
+            //
+        ]);
+    }
+}

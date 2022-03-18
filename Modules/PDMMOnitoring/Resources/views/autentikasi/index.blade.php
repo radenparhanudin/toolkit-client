@@ -31,6 +31,12 @@
                 <form action="{{ route('pdm-monitoring.autentikasi.login') }}" method="POST">
                     @csrf
                     <div class="form-group">
+                        <input type="text" name="single_identity" id="single_identity" rows="5" class="form-control @error('single_identity') is-invalid @enderror" placeholder="Single Identity" value="{{ session()->get('pdm_monitoring_single_identity') }}">
+                        @error('single_identity')
+                        <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+                    </div>
+                    <div class="form-group">
                         <textarea name="cookie" id="cookie" rows="5" class="form-control @error('cookie') is-invalid @enderror" placeholder="Paste Cookie SIASN">{{ session()->get('pdm_monitoring_cookie') }}</textarea>
                         @error('cookie')
                         <div class="invalid-feedback">{{ $message }}</div>

@@ -25,6 +25,7 @@
                     <div class="card-header">
                         <a href="{{ route('pdm-monitoring.rekapitulasi-progress.usul-asn.store') }}" class="btn btn-sm mb-2 btn-dark btn-rekap"><i class="fas fa-clipboard-check fa-fw mr-1"></i>Rekap</a>
                         <a href="{{ route('pdm-monitoring.rekapitulasi-progress.usul-asn.generate') }}" class="btn btn-sm mb-2 btn-danger btn-generate"><i class="fas fa-sync fa-fw mr-1"></i>Generate</a>
+                        <a href="{{ route('pdm-monitoring.rekapitulasi-progress.usul-asn.download') }}" class="btn btn-sm mb-2 btn-success"><i class="fas fa-cloud-download-alt mr-1"></i>Download</a>
                     </div>
                     <div class="card-body">
                         @include('pdmmonitoring::rekapitulasi-progress.usul-asn.table')

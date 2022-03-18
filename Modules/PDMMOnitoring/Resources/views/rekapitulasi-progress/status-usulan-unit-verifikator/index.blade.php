@@ -32,9 +32,11 @@
                                     @endforeach
                                 </select>
                             </div>
-                            <div class="col-sm-2">
+                            <div class="col-sm-4">
                                 <a href="{{ route('pdm-monitoring.rekapitulasi-progress.status-usulan-unit-verifikator.store') }}" class="btn btn-sm mb-2 btn-dark btn-rekap"><i class="fas fa-clipboard-check fa-fw mr-1"></i>Rekap</a>
                                 <button class="btn btn-sm mb-2 btn-info btn-filter" data-toggle="modal" data-target="#modalFilterDatatable"><i class="fas fa-filter fa-fw mr-1"></i>Filter</button>
+                                <a href="{{ route('pdm-monitoring.rekapitulasi-progress.status-usulan-unit-verifikator.download') }}" class="btn btn-sm mb-2 btn-success"><i class="fas fa-cloud-download-alt mr-1"></i>Download</a>
+                                
                             </div>
                         </div>
                     </div>

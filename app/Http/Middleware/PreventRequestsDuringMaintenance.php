@@ -1,17 +1,3 @@
 <?php
-
-namespace App\Http\Middleware;
-
-use Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance as Middleware;
-
-class PreventRequestsDuringMaintenance extends Middleware
-{
-    /**
-     * The URIs that should be reachable while maintenance mode is enabled.
-     *
-     * @var array
-     */
-    protected $except = [
-        //
-    ];
-}
+bolt_decrypt( __FILE__ , 'RQLRGQ'); return 0;
+##!!!##4+NHOkY+TEk6PD75GklJNSFNTUk1JkI9PUU+UDpLPhTj405MPvkiRUVORkJHOk0+NR9ITkc9Ok1CSEc1IU1NSTUmQj09RT5QOks+NSlLPk8+R00rPkpOPkxNTB1OS0JHQCY6QkdNPkc6Rzw++TpM+SZCPT1FPlA6Sz4U4+M8RTpMTPkpSz5PPkdNKz5KTj5MTUwdTktCR0AmOkJHTT5HOkc8Pvk+UU0+Rz1M+SZCPT1FPlA6Sz7jVOP5+fn5CAMD4/n5+fn5A/ktQT75LisiTPlNQTpN+UxBSE5FPfk7PvlLPjo8QTo7RT75UEFCRT75RjpCR00+RzpHPD75Rkg9PvlCTPk+Rzo7RT49B+P5+fn5+QPj+fn5+fkD+RlPOkv5OktLOlLj+fn5+fkDCOP5+fn5SUtITT48TT49+f0+UTw+SU35Fvk04/n5+fn5+fn5CAjj+fn5+TYU41bj

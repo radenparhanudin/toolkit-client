@@ -1,22 +1,3 @@
 <?php
-
-namespace App\Http\Controllers;
-
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-use Illuminate\Foundation\Bus\DispatchesJobs;
-use Illuminate\Foundation\Validation\ValidatesRequests;
-use Illuminate\Routing\Controller as BaseController;
-
-class Controller extends BaseController
-{
-    use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
-
-    public function reqResponse($status = true, $message = null, $data = [], $code = 200)
-    {
-        return response()->json([
-            'status'  => $status,
-            'message' => $message,
-            'data'    => $data,
-        ], $code);
-    }
-}
+bolt_decrypt( __FILE__ , 'Ipq7k2'); return 0;
+##!!!##CAhsX2tjcW5fYWMeP25uWkZycm5aQW1scnBtampjcHE5CAhzcWMeR2pqc2tnbF9yY1pEbXNsYl9yZ21sWj9zcmZaP2FhY3FxWj9zcmZtcGd4Y3FQY29zY3FycTkIc3FjHkdqanNrZ2xfcmNaRG1zbGJfcmdtbFpAc3FaQmdxbl9yYWZjcUhtYHE5CHNxYx5Hampza2dsX3JjWkRtc2xiX3JnbWxaVF9qZ2JfcmdtbFpUX2pnYl9yY3FQY29zY3FycTkIc3FjHkdqanNrZ2xfcmNaUG1zcmdsZVpBbWxycG1qamNwHl9xHkBfcWNBbWxycG1qamNwOQgIYWpfcXEeQW1scnBtampjcB5jdnJjbGJxHkBfcWNBbWxycG1qamNwCHkIHh4eHnNxYx4/c3JmbXBneGNxUGNvc2NxcnEqHkJncW5fcmFmY3FIbWBxKh5UX2pnYl9yY3FQY29zY3FycTkICB4eHh5uc2BqZ2EeZHNsYXJnbWwecGNvUGNxbm1scWMmInFyX3JzcR47HnJwc2MqHiJrY3FxX2VjHjsebHNqaioeImJfcl8eOx5ZWyoeImFtYmMeOx4wLi4nCB4eHh55CB4eHh4eHh4ecGNyc3BsHnBjcW5tbHFjJicrPGhxbWwmWQgeHh4eHh4eHh4eHh4lcXJfcnNxJR4eOzweInFyX3JzcSoIHh4eHh4eHh4eHh4eJWtjcXFfZWMlHjs8HiJrY3FxX2VjKggeHh4eHh4eHh4eHh4lYl9yXyUeHh4eOzweImJfcl8qCB4eHh4eHh4eWyoeImFtYmMnOQgeHh4eewh7CA==

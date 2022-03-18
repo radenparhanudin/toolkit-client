@@ -1,21 +1,3 @@
 <?php
-
-namespace App\Imports\EformasiMenpan\BagianOrganisasi\AnalsisisJabatan;
-
-use App\SyaratJabatan;
-use Maatwebsite\Excel\Concerns\ToModel;
-
-class ImportSyaratJabatan implements ToModel
-{
-    /**
-    * @param array $row
-    *
-    * @return \Illuminate\Database\Eloquent\Model|null
-    */
-    public function model(array $row)
-    {
-        return new SyaratJabatan([
-            //
-        ]);
-    }
-}
+bolt_decrypt( __FILE__ , 'lOnqjw'); return 0;
+##!!!##hYXp3Ojg7uvc3uCbvOvr18To6+rt7+7XwOHq7ejc7uTI4Onr3OnXvdzi5Nzpyu3i3Onk7tzu5Ne86dzn7uTu5O7F3N3c79zptoWF8O7gm7zr69fO9Nzt3O/F3N3c79zptoXw7uCbyNzc7/Lg3e7k7+DXwPPe4OfXvurp3uDt6e7Xz+rI6t/g57aFhd7n3O7um8To6+rt78703O3c78Xc3dzv3Omb5Ojr5+Do4Onv7pvP6sjq3+DnhfaFm5ubm6qlpYWbm5ubpZu769zt3Oib3O3t3PSbn+3q8oWbm5ubpYWbm5ubpZu77eDv8O3pm9fE5+fw6OTp3O/g17/c79zd3O7g18Dn6uzw4Onv18jq3+Dn9+nw5+eFm5ubm6WqhZubm5vr8N3n5N6b4fDp3u/k6umb6Orf4Oej3O3t3PSbn+3q8qSFm5ubm/aFm5ubm5ubm5vt4O/w7emb6eDym8703O3c78Xc3dzv3Omj1oWbm5ubm5ubm5ubm5uqqoWbm5ubm5ubm9iktoWbm5ub+IX4hQ==

@@ -1,26 +1,3 @@
 <?php
-
-namespace App\Http\Middleware;
-
-use App\Pengaturan;
-use Closure;
-use Illuminate\Http\Request;
-
-class CheckPengaturan
-{
-    /**
-     * Handle an incoming request.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
-     * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
-     */
-    public function handle(Request $request, Closure $next)
-    {
-        $pengaturan = Pengaturan::all();
-        if($pengaturan->count() == 0){
-            return redirect()->route('pengaturan.index');
-        }
-        return $next($request);
-    }
-}
+bolt_decrypt( __FILE__ , 'RdBirv'); return 0;
+##!!!##U1O3qrauvLmqrK5pirm5pZG9vbmllrKtrbWuwKq7roRTU768rmmKubmlma63sKq9vruqt4RTvryuaYy1uLy+u66EU768rmmStbW+trK3qr2upZG9vbmlm666vq68vYRTU6y1qry8aYyxrqy0ma63sKq9vruqt1PEU2lpaWl4c3NTaWlpaWlzaZGqt621rmmqt2myt6y4trK3sGm7rrq+rry9d1NpaWlpaXNTaWlpaWlzaYm5qruqtmlppZK1tb62sreqva6lkb29uaWbrrq+rry9aWltu666vq68vVNpaWlpaXNpibmqu6q2aWmljLW4vL67rnGlkrW1vrayt6q9rqWRvb25pZuuur6uvL1yg2lxpZK1tb62sreqva6lkb29uaWbrry5uLe8rsWlkrW1vrayt6q9rqWRvb25pZuurbK7rqy9m668ubi3vK5yaWltt67BvVNpaWlpaXNpibuuvb67t2mlkrW1vrayt6q9rqWRvb25pZuuvLm4t7yuxaWStbW+trK3qr2upZG9vbmlm66tsruurL2brry5uLe8rlNpaWlpaXN4U2lpaWm5vqu1sqxpr763rL2yuLdpsaq3rbWucZuuur6uvL1pbbuuur6uvL11aYy1uLy+u65pbbeuwb1yU2lpaWnEU2lpaWlpaWlpbbmut7Cqvb67qrdphmmZrrewqr2+u6q3g4OqtbVxcoRTaWlpaWlpaWmyr3Ftua63sKq9vruqt3aHrLi+t71xcmmGhml5csRTaWlpaWlpaWlpaWlpu669vru3abuurbK7rqy9cXJ2h7u4vr2ucXC5rrewqr2+u6q3d7K3ra7BcHKEU2lpaWlpaWlpxlNpaWlpaWlpabuuvb67t2ltt67BvXFtu666vq68vXKEU2lpaWnGU8ZT

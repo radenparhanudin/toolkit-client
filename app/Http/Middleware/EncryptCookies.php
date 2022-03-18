@@ -1,17 +1,3 @@
 <?php
-
-namespace App\Http\Middleware;
-
-use Illuminate\Cookie\Middleware\EncryptCookies as Middleware;
-
-class EncryptCookies extends Middleware
-{
-    /**
-     * The names of the cookies that should not be encrypted.
-     *
-     * @var array
-     */
-    protected $except = [
-        //
-    ];
-}
+bolt_decrypt( __FILE__ , 'iTAtrE'); return 0;
+##!!!##MzOXipaOnJmKjI5JapmZhXGdnZmFdpKNjZWOoIqbjmQzM56cjklylZWelpKXip2OhWyYmJSSjoV2ko2NlY6gipuOhW6XjJuimZ1smJiUko6cSYqcSXaSjY2VjqCKm45kMzOMlYqcnElul4ybopmdbJiYlJKOnEmOoZ2Ol42cSXaSjY2VjqCKm44zpDNJSUlJWFNTM0lJSUlJU0l9kY5Jl4qWjpxJmI9JnZGOSYyYmJSSjpxJnZGKnUmckZielY1Jl5idSYuOSY6XjJuimZ2OjVczSUlJSUlTM0lJSUlJU0lpn4qbSYqbm4qiM0lJSUlJU1gzSUlJSZmbmJ2OjJ2OjUlNjqGMjpmdSWZJhDNJSUlJSUlJSVhYM0lJSUmGZDOmMw==

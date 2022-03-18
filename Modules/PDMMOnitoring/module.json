@@ -1,0 +1,13 @@
+{
+    "name": "PDMMOnitoring",
+    "alias": "pdmmonitoring",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\PDMMOnitoring\\Providers\\PDMMOnitoringServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

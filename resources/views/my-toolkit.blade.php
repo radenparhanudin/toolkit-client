@@ -39,10 +39,17 @@
                                 <strong>Rename File</strong>
                             </a>
                         </div>
+                        
                         <div class="col-sm-4 col-lg-3">
                             <a href="{{ route('docudigital-uploader.home.index') }}" class="btn btn-app-new">
                                 <i class="fas fa-cloud-upload-alt"></i>
                                 <strong>Docudigital Uploader</strong>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-lg-3">
+                            <a href="{{ route('pdm-monitoring.dashboard.index') }}" class="btn btn-app-new">
+                                <i class="fas fa-laptop"></i>
+                                <strong>PDM Monitoring</strong>
                             </a>
                         </div>
                     </div>

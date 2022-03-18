@@ -1,21 +1,3 @@
 <?php
-
-namespace App\Imports\EformasiMenpan\BagianOrganisasi;
-
-use Maatwebsite\Excel\Concerns\ToModel;
-use Modules\EformasiMenpan\Entities\BagianOrganisasi\Bezzeting;
-
-class ImportBezzeting implements ToModel
-{
-    /**
-    * @param array $row
-    *
-    * @return \Illuminate\Database\Eloquent\Model|null
-    */
-    public function model(array $row)
-    {
-        return new Bezzeting([
-            //
-        ]);
-    }
-}
+bolt_decrypt( __FILE__ , '6Tqb2l'); return 0;
+##!!!##BQVpXGhgbmtcXmAbPGtrV0Roa2ptb25XQGFqbWhcbmRIYGlrXGlXPVxiZFxpSm1iXGlkblxuZDYFBXBuYBtIXFxvcmBdbmRvYFdAc15gZ1c+amleYG1pbldPakhqX2BnNgVwbmAbSGpfcGdgbldAYWptaFxuZEhgaWtcaVdAaW9kb2Rgblc9XGJkXGlKbWJcaWRuXG5kVz1gdXVgb2RpYjYFBV5nXG5uG0Roa2ptbz1gdXVgb2RpYhtkaGtnYGhgaW9uG09qSGpfYGcFdgUbGxsbKiUlBRsbGxslGztrXG1caBtcbW1cdBsfbWpyBRsbGxslBRsbGxslGzttYG9wbWkbV0RnZ3BoZGlcb2BXP1xvXF1cbmBXQGdqbHBgaW9XSGpfYGd3aXBnZwUbGxsbJSoFGxsbG2twXWdkXhthcGleb2RqaRtoal9gZyNcbW1cdBsfbWpyJAUbGxsbdgUbGxsbGxsbG21gb3BtaRtpYHIbPWB1dWBvZGliI1YFGxsbGxsbGxsbGxsbKioFGxsbGxsbGxtYJDYFGxsbG3gFeAU=

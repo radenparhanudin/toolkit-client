@@ -68,6 +68,12 @@
                                 <strong>eFormasi Menpan</strong>
                             </a>
                         </div>
+                        <div class="col-sm-4 col-lg-3">
+                            <a href="{{ route('docudigital-downloader.dashboard.index') }}" class="btn btn-app-new">
+                                <i class="fas fa-cloud-download-alt"></i>
+                                <strong>Docudigital Downloader</strong>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

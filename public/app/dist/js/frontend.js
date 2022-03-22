@@ -12,6 +12,52 @@ $(document).ready(function(){
         minimumResultsForSearch: Infinity
     })
 
+    $('#formDownloadModalDatatable').submit(function (event) {
+        event.preventDefault();
+        action = $('#formDownloadModalDatatable').attr('action');
+        method = $('#formDownloadModalDatatable').attr('method');
+        data   = $('#formDownloadModalDatatable').serialize();
+    
+        $('.form-control').removeClass('is-invalid')
+        $('.invalid-feedback').html('')
+        $.ajax({
+            url: action,
+            type: method,
+            data: data,
+            beforeSend: function () {
+                HoldOn.open()
+            },
+            success: function (res) {
+                HoldOn.close()
+                if(res.status){
+                    Swal.fire({
+                        icon: 'success',
+                        html: res.message
+                    })
+                    $('#modalFormDownloadDatatable').modal('hide')
+                    $('#dataTableDefault').DataTable().ajax.reload(null, false);
+
+                }
+                else{
+                    Swal.fire({
+                        icon: 'error',
+                        html: res.message
+                    })
+                }
+            },
+            error: function (xhr) {
+                HoldOn.close()
+                var res = xhr.responseJSON;
+                if ($.isEmptyObject(res) == false) {
+                    $.each(res.errors, function (key, value) {
+                        $('#' + key).addClass('is-invalid')
+                        $('#feedback_' + key).html(value[0])
+                    });
+                }
+            }
+        })
+    });
+
     $('#formPostModalDatatable').submit(function (event) {
         event.preventDefault();
         action = $('#formPostModalDatatable').attr('action');

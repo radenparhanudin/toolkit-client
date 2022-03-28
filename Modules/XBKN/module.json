@@ -1,0 +1,13 @@
+{
+    "name": "XBKN",
+    "alias": "xbkn",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\XBKN\\Providers\\XBKNServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -330,7 +330,7 @@ $(document).ready(function(){
                         }
                         else {
                             Swal.fire({
-                                icon: 'success',
+                                icon: 'error',
                                 html: res.message
                             })
                         }

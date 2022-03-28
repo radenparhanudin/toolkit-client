@@ -74,6 +74,12 @@
                                 <strong>Docudigital Downloader</strong>
                             </a>
                         </div>
+                        <div class="col-sm-4 col-lg-3">
+                            <a href="{{ route('x-bkn.dashboard.index') }}" class="btn btn-app-new">
+                                <i class="fab fa-apple"></i>
+                                <strong>X-BKN</strong>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

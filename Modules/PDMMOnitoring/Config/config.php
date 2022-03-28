@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'name' => 'PDMMOnitoring'
+    'name' => 'EformasiMenpan'
 ];

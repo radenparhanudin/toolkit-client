@@ -1,6 +1,6 @@
 <div class="row d-flex justify-content-center">
     <div class="col-sm-6 col-lg-4 text-center">
-        <a data-toggle="modal" data-target="#modalFormDownloadDatatable" class="btn btn-sm mb-2 btn-primary"><i class="fas fa-cloud-download-alt fa-fw mr-1"></i>Download</a>
+        <a data-toggle="modal" data-target="#modalFormDownloadStrukturDatatable" class="btn btn-sm mb-2 btn-primary"><i class="fas fa-cloud-download-alt fa-fw mr-1"></i>Download</a>
         {{-- <a href="#" class="btn btn-sm mb-2 btn-danger btn-upload"><i class="fas fa-cloud-upload-alt fa-fw mr-1"></i>Upload ABK</a> --}}
     </div>
     <div class="col-sm-6 col-lg-4 text-center">

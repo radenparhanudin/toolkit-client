@@ -51,10 +51,10 @@
         'action' => route('efm.bo.bezzeting.import'),
     ]
 ])
-<div class="modal fade" id="modalFormDownloadDatatable">
+<div class="modal fade" id="modalFormDownloadStrukturDatatable">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form id="formDownloadModalDatatable" action="{{ route('efm.bo.bezzeting.download') }}" method="POST">
+            <form id="formDownloadStrukturModalDatatable" action="{{ route('efm.bo.bezzeting.download') }}" method="POST">
                 <div class="modal-header">
                     <h4 class="modal-title">Download Bezzeting</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">

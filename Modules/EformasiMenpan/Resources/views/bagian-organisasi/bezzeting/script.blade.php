@@ -22,18 +22,17 @@
                 {data: 'currentpns', className: 'text-center w-5 align-middle d-none'},
                 {data: 'currentpppk', className: 'text-center w-5 align-middle d-none'},
                 {data: 'currentlainnya', className: 'text-center w-5 align-middle d-none'},
-                {data: 'detail', className: 'align-middle'},
+                {data: 'detail', className: 'align-middle d-none'},
                 {data: 'data_status', className: 'text-center w-5 align-middle'},
                 {data: 'action', className: 'text-center w-5 align-middle'},
             ]
         })
 
-
-        $('#formDownloadModalDatatable').submit(function (event) {
+        $('#formDownloadStrukturModalDatatable').submit(function (event) {
             event.preventDefault();
-            action = $('#formDownloadModalDatatable').attr('action');
-            method = $('#formDownloadModalDatatable').attr('method');
-            data   = $('#formDownloadModalDatatable').serialize();
+            action = $('#formDownloadStrukturModalDatatable').attr('action');
+            method = $('#formDownloadStrukturModalDatatable').attr('method');
+            data   = $('#formDownloadStrukturModalDatatable').serialize();
         
             $('.form-control').removeClass('is-invalid')
             $('.invalid-feedback').html('')
@@ -51,8 +50,8 @@
                             icon: 'success',
                             html: res.message
                         })
-                        $('#modalFormDownloadDatatable').modal('hide')
                         $('#dataTableDefault').DataTable().ajax.reload(null, false);
+
                     }
                     else{
                         Swal.fire({
@@ -73,7 +72,7 @@
                 }
             })
         });
-        
+
         $('#dataTableDefault').on('click', '.btn-edit', function (event) {
             event.preventDefault();
             $.ajax({
@@ -97,7 +96,7 @@
             })
         });
         
-        $('#modalFormDownloadDatatable').on('show.bs.modal', function(){
+        $('#modalFormDownloadStrukturDatatable').on('show.bs.modal', function(){
             $('#efm_head_id_level_2').empty()
             $('#efm_head_id_level_2').append('<option></option>')
             $('#efm_head_id_level_3').empty()
